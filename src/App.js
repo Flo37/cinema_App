@@ -1,10 +1,16 @@
 import React from 'react';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Sec from './pages/Sec';
 
 const App = () => {
   return (
-    <div>
-      <h1>CineFlo</h1>
-    </div>
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='sec' element={<Sec/>}/>
+   </Routes>
+   </BrowserRouter>
   );
 };
 

@@ -19,8 +19,8 @@ const Home = () => {
             <input type="submit" value="Searching" />
             </form>
             <div className="buttons">
-                <button type="submit">Top </button>
-                <button type="submit">Flop</button>
+                <button type="submit">Top <i class="fa-solid fa-up-long"></i></button>
+                <button type="submit">Flop <i class="fa-solid fa-down-long"></i></button>
             </div>
             <ul>
                 {data.map(films=>

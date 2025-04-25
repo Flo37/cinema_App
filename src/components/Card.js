@@ -4,9 +4,11 @@ import React from 'react';
 
 const Card = ({films}) => {
     return (
-        <div>
+        <div className='card'>
             
-            {/* <img src="https://image.tmdb.org/t/p/original/ + id" alt="" /> */}
+            <img src={films.poster_path ?
+                 "https://image.tmdb.org/t/p/original/"+films.poster_path :"./img/poster.jpg"} 
+                 alt="" />
             <p>{films.title}</p>
             <em>{films.release_date}</em>
             <p>{films.vote_average}</p>

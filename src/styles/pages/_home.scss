@@ -1,0 +1,37 @@
+.home{
+    text-align: center;
+    .form_master{
+        background: rgba(122, 168, 149, 0.288);
+        border-radius: 10px;
+        width: fit-content;
+        padding: 2rem 10rem;
+        margin: 0 auto;
+        .form{
+            input[type="text"]{
+                text-align: center;
+                border: none;
+                outline:1px solid lightblue;
+                border-radius: 5px;
+                padding: .5rem .2rem;
+            }
+            input[type="submit"]{
+                padding: .5rem 3.5rem;
+                margin: 5px 0;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        .buttons{
+            button{
+                background: darkblue;
+                border: none;
+                margin:  0 2px;
+                border-radius: 5px;
+                font-size: 1rem;
+                color: white;
+                padding: 0.2rem 1.3rem
+                ;
+            }
+        }
+    }
+}

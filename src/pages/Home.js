@@ -11,19 +11,24 @@ const Home = () => {
         .then((res)=>setData(res.data.results))
     },[])
     return (
-        <div>
+        <div className='home'>
             <Navigation/>
             <Logo/>
-            <form >
+            <div className="form_master">
+
+            <form className='form' >
             <input type="text" placeholder='Enter the Title' />
+            <br/>
             <input type="submit" value="Searching" />
             </form>
             <div className="buttons">
                 <button type="submit">Top <i class="fa-solid fa-up-long"></i></button>
                 <button type="submit">Flop <i class="fa-solid fa-down-long"></i></button>
             </div>
+            </div>
             <ul>
-                {data.map(films=>
+                {data
+                .slice(0,12).map(films=>
                 <Card key={films.id} films={films}/>
                 )}
             </ul>

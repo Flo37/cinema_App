@@ -16,11 +16,8 @@ const Home = () => {
     const[submit,setSubmit]=useState("")
     const HandSubmit =(e)=>{
         e.preventDefault()
-        // axios.post('https://api.themoviedb.org/3/search/movie?api_key=ed82f4c18f2964e75117c2dc65e2161d&query=code&language=fr-FR',{
-
-        //     submit
-        // })
     }
+ 
     return (
         <div className='home'>
             <Navigation/>
@@ -32,14 +29,17 @@ const Home = () => {
             <br/>
             <input type="submit" value="Searching" />
             </form>
-            <div className="buttons">
-                <button type="submit">Top <i class="fa-solid fa-up-long"></i></button>
-                <button type="submit">Flop <i class="fa-solid fa-down-long"></i></button>
+            <div className="buttons" >
+                <button className='btn1' type="submit">Top <i class="fa-solid fa-up-long"
+                onChange={console.log('c´est moi')}
+                ></i></button> 
+                <button className='btn2' type="submit">Flop <i class="fa-solid fa-down-long"></i></button>
             </div>
             </div>
             <ul>
                 {data.filter(films=>films.title.toLowerCase().includes(submit))
-                .sort((a,b)=>b.vote_average - a.vote_average)
+              
+                // .sort((a,b)=>btn2. - btn1.vote_average)
                 .slice(0,12).map(films=>
                 <Card key={films.id} films={films}/>
                 )}

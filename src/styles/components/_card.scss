@@ -44,10 +44,14 @@
                 cursor: pointer;
                 list-style: none;
                 margin:5px  auto 0 0;
-                background: rgb(238, 245, 142);
-                color: black;
+                background: rgb(27, 214, 189);
+                color: rgba(255, 102, 0, 0.753);
                 padding: 0.2rem;
                 border-radius: 10px;
+                width: fit-content;
+                font-weight: 600;
+                text-shadow: .5px .5px rgb(43, 41, 41);
+                font-size: 1.2rem;
                 &:hover{
 
                 }

@@ -75,11 +75,10 @@ const Card = ({films}) => {
             <img src={films.poster_path ?
                  "https://image.tmdb.org/t/p/original/"+films.poster_path :"./img/poster.jpg"} 
                  alt="" />
-            <p>{films.title}</p>
-            <em>{films.release_date}</em>
-            <p>{films.vote_average}/10 <span className='star'>⭐</span></p>
-            <p>{films.genre_ids}</p>
-            <ul>
+            <h4>{films.title}</h4>
+            <em className='date'>{films.release_date}</em>
+            <p className='average'>{films.vote_average}/10 <span className='star'>⭐</span></p>
+            <ul className='genre'>
                 {
                     films.genre_ids? genreFinder():null
                 }

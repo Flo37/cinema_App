@@ -36,7 +36,7 @@ const Home = () => {
                 <button className='btn2' type="submit">Flop <i class="fa-solid fa-down-long"></i></button>
             </div>
             </div>
-            <ul>
+            <ul className='maping'>
                 {data.filter(films=>films.title.toLowerCase().includes(submit))
               
                 // .sort((a,b)=>btn2. - btn1.vote_average)

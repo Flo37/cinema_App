@@ -2,11 +2,11 @@ import React from 'react';
 
 const Logo = () => {
     return (
-        <div>
+        <div className='logo'>
             <h1>
-
-            CineFlo
+            Cine <i class="fa-solid fa-film flocine"></i> Flo
             </h1>
+            <img src="./img/cine.jpg" alt="" />
         </div>
     );
 };

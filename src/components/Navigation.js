@@ -8,7 +8,7 @@ const Navigation = () => {
     <NavLink to ='/'>
         <li>Home</li>
     </NavLink>
-    <NavLink to ='sec'>
+    <NavLink to ='/sec'>
         <li>Coups de Coeur</li>
     </NavLink>
         </ul>

@@ -5,8 +5,8 @@ import Logo from '../components/Logo';
 const Sec = () => {
     return (
         <div>
-            <Logo/>
           <Navigation/>  
+            <Logo/>
         </div>
     );
 };

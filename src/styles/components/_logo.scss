@@ -1,0 +1,26 @@
+.logo{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: rgb(223, 255, 238);
+        position: absolute;
+        margin: 10px 100px;
+        text-shadow: 1px 3px 3px  rgb(18, 19, 18);
+        z-index: 1;
+    }
+    .flocine{
+        color: rgb(122, 126, 88);
+        width: 10px;
+    }
+    img{
+        position: relative;
+        width: 220px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 1px  rgba(128, 128, 128, 0.589);
+        
+    }
+}
